@@ -1,10 +1,26 @@
-window.snake.more_menu = function(e) {
-  e = e || 25;
+<!DOCTYPE html>
+<html>
+<head>
+  <title>||Simple Game Test||</title>
+</head>
+<body>
+  <canvas id="gameCanvas" width=800 height=600></canvas>
+  <script>
+  window.onload = function() {
+    canvas = document.getElementById('gameCanvas');
+    c = canvas.getContext('2d');
+    setInterval(draw, 50);
+  }
+    
+  function() draw {
+    drawRect('blue', 50, 50, 30, 45);
+    
+  }
   
-  // micro
-  let img = new Image;
-  img.src = 'https://i.postimg.cc/FHxxLK4m/micro-1.png';
-  img.width = 47;
-  img.height = 47;
-  document.querySelector('#size').appendChild(img);
-};
+  function() drawRect(clr, X, Y, width, height) {
+    c.fillStyle = color;
+    c.fillRect(X, Y, width, height);
+  }
+  </script>
+</body>
+</html>
