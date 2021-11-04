@@ -4,7 +4,7 @@
   <title>||Simple Game Test||</title>
 </head>
 <body>
-  <canvas id="gameCanvas" width=800 height=600></canvas>
+  <div id="gameCanvas" width=800 height=600></div>
   <script>
   window.onload = function() {
     canvas = document.getElementById('gameCanvas');
@@ -14,7 +14,6 @@
     
   function() draw {
     drawRect('blue', 50, 50, 30, 45);
-    
   }
   
   function() drawRect(clr, X, Y, width, height) {
