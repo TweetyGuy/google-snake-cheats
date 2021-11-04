@@ -1,6 +1,6 @@
 window.onload = function() {
-  canvas = document.createElement('gameCanvas');
-  c = canvas.getContext('2d');
+  document.body.innerHTML = "<canvas width=500 height=150 id='canvas'>";
+  var c = canvas.getContext('2d');
   setInterval(draw, 50);
 }
 
