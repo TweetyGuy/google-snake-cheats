@@ -6,6 +6,9 @@ window.onload = function() {
 
 function() draw {
   drawRect('blue', 50, 50, 30, 45);
+
+  c.fillStyle = 'blue';
+  c.fillRect(50, 50, 30, 45);
 }
 function() drawRect(color, X, Y, width, height) {
   c.fillStyle = color;
